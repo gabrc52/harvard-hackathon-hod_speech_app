@@ -7,8 +7,12 @@ environment:
   sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
+  coast_audio: ^0.0.5
   flutter:
     sdk: flutter
+  just_audio: ^0.9.36
+  just_waveform: ^0.0.5
+  mic_stream: ^0.7.1+2
   record: ^5.0.4
 
 dev_dependencies:
