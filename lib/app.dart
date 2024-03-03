@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hod_speech_app/pages/record.dart';
+import 'package:hod_speech_app/pages/saved.dart';
+import 'package:hod_speech_app/pages/transcribe.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -41,15 +44,9 @@ class App extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            Center(
-              child: Text("The patient records what they want to say, and our tool modifies it by removing pauses between syllables and increasing the speed of the speech."),
-            ),
-            Center(
-              child: Text("Unlike traditional text-to-speech applications, this does not use pauses to calculate when the end of a word is: it accumulates syllables until it detects the start of the next word using context, and then combines the previous syllables into a word."),
-            ),
-            Center(
-              child: Text("The user of the app can save preset messages for frequent use. Such as “Hi my name is ___, I have a disorder called HOD which affects my movements and coordination.” or their address or phone number."),
-            ),
+            RecordPage(),
+            TranscribePage(),
+            SavedPage(),
           ],
         ),
       ),
