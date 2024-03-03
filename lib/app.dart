@@ -14,7 +14,7 @@ class App extends StatelessWidget {
                 context: context,
                 applicationName: "HOD/Ataxia Speech Helper",
                 applicationLegalese:
-                    "This is a sample application for the Harvard 2024 Rare Disease Hackathon, aiming to help not just HOD patients but anyone who has ataxic speech."),
+                    "This is a sample application for the Harvard 2024 Rare Disease Hackathon, aiming to help not just HOD patients but anyone who has ataxic speech, with an emphasis and focus on hypertrophic olivary degeneration."),
             icon: const Icon(Icons.info_outline),
           )
         ],
